@@ -2,3 +2,4 @@
 body {background-color: #005800; margin: 0;}
 footer {text-align: center; width: 100vw; position: fixed; bottom: 0;}
 footer img {display: inline-block;}
+.link:hover {letter-spacing: 3px;}
