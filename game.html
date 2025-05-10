@@ -21,7 +21,8 @@
       document.body.appendChild(script);
 
       function tick(timestamp) {
-        ctx.drawImage(spritesheet, 0, 0, 16, 16, px, 0, 32, 32);
+        ctx.clearRect(0, 0, 256, 128);
+        ctx.drawImage(spritesheet, 0, 0, 8, 8, px, 0, 32, 32);
         px++;
         requestAnimationFrame(tick);
       }
