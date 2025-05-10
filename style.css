@@ -4,3 +4,4 @@ footer {text-align: center; width: 100vw; position: fixed; bottom: 0;}
 footer img {display: inline-block;}
 .link {letter-spacing: normal; transition: letter-spacing ease 1s;}
 .link:hover {letter-spacing: 2px;}
+canvas {border: 5px solid #009400;}
