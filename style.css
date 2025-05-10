@@ -1,7 +1,7 @@
 .text {color: #009400; font-family: sans-serif; font-weight: bold;}
 body {background-color: #005800; margin: 0;}
 footer {text-align: center; width: 100vw; position: fixed; bottom: 0;}
-footer img {display: inline-block;}
+footer img {display: inline-block; width: 24px; height: 24px;}
 .link {letter-spacing: normal; transition: letter-spacing ease 1s;}
 .link:hover {letter-spacing: 2px;}
 canvas {border: 5px solid #009400;}
