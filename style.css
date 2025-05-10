@@ -2,5 +2,5 @@
 body {background-color: #005800; margin: 0;}
 footer {text-align: center; width: 100vw; position: fixed; bottom: 0;}
 footer img {display: inline-block;}
-.link {letter-spacing: normal;}
-.link:hover {letter-spacing: 3px;}
+.link {letter-spacing: normal; transition: letter-spacing ease 1s}
+.link:hover {letter-spacing: 2px;}
