@@ -23,7 +23,7 @@
 
       function tick(timestamp) {
         ctx.clearRect(0, 0, 256, 128);
-        ctx.drawImage(spritesheet, 0, 0, 8, 8, px, 0, 32, 32);
+        ctx.drawImage(spritesheet, 0, 0, 8, 8, px * 32, py * 32, 32, 32);
         px++;
         requestAnimationFrame(tick);
       }
