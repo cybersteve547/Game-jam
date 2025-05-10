@@ -1,4 +1,4 @@
 .text {color: #009400; font-family: sans-serif; font-weight: bold;}
 body {background-color: #005800;}
-footer: {display: grid; place-items: center;}
-
+footer: {text-align: center;}
+img {display: inline-block;}
