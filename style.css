@@ -19,4 +19,6 @@ footer img {display: inline-block; width: 24px; height: 24px;}
 .kbd-button:nth-child(2) {grid-area: left;}
 .kbd-button:nth-child(3) {grid-area: down;}
 .kbd-button:nth-child(4) {grid-area: right;}
-button {width: 64px; height: max-content;}
+button {width: 64px;}
+.s-button {height: 64px;}
+.b-button {height: 128px;}
