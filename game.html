@@ -36,16 +36,20 @@
       }
       
       function moveUp() {
-        py--
+        py--;
+        pd = 0;
       }
       function moveLeft() {
-        px--
+        px--;
+        pd = 3;
       }
       function moveDown() {
-        py++
+        py++;
+        pd = 2;
       }
       function moveRight() {
-        px++
+        px++;
+        pd = 1;
       }
 
       requestAnimationFrame(tick);
