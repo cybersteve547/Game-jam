@@ -8,6 +8,7 @@
     <br>
     <canvas id="canvas1" width="256" height="128"></canvas>
     <script>
+      const url = new URL(window.location.href);
       const canvas1 = document.getElementById("canvas1");
       const ctx = canvas1.getContext("2d");
       const spritesheet = new Image();
