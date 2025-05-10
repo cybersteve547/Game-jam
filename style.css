@@ -12,7 +12,7 @@ footer img {display: inline-block; width: 24px; height: 24px;}
   grid-template-areas: "left up right" "left down right";
   grid-template-columns: 64px 64px 64px;
   grid-template-rows: 64px 64px;
-  width: 192px;
+  width: min-content;
 }
 .kbd-button {text-align: center;}
 .kbd-button:nth-child(1) {grid-area: up;}
