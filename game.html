@@ -6,7 +6,26 @@
   <body>
     <a href="levels.html" class="text link">Back to levels</a>
     <br>
-    <canvas id="game1" width="256" height="128"></canvas>
-    <script></script>
+    <canvas id="canvas1" width="256" height="128"></canvas>
+    <script>
+      const canvas1 = document.getElementById("canvas1");
+      const ctx = canvas1.getContext("2d");
+      const spritesheet = new Image();
+      spritesheet.src = "images/spritesheet.png"
+      const level = url.searchParams.get("level");
+      let px;
+      let py;
+      const script = document.createElement("script");
+      script.src = `lv{level}.js`;
+      document.body.appendChild(script);
+
+      function tick(timestamp) {
+        ctx.drawImage(spritesheet, 0, 0, 16, 16, px, 0, 32, 32);
+        px++;
+        requestAnimationFrame(tick);
+      }
+
+      requestAnimationFrame(tick);
+    </script>
   </body>
 </html>
