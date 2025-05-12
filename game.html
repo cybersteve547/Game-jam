@@ -25,11 +25,20 @@
       let px = 0;
       let py = 0;
       let pd = 1;
+      let grid = [[0, 0, 0, 1, 1, 1, 0, 0],
+                  [0, 0, 0, 0, 0, 1, 0, 0],
+                  [0, 0, 0, 0, 1, 1, 0, 0],
+                  [0, 0, 0, 0, 1, 0, 0, 0]]
       const script = document.createElement("script");
       script.src = `lv1.js`;
       document.body.appendChild(script);
 
       function tick(timestamp) {
+        for (let y = 0; y < 4; y++;) {
+          for (let x = 0; x < 8; x++;) {
+            ctx.drawimage(spritesheet, 8, grid[y][x] * 8, 8, 8, x * 32, y * 32, 32, 32);
+          }
+        }
         ctx.clearRect(0, 0, 256, 256);
         ctx.drawImage(spritesheet, 0, pd * 8, 8, 8, px * 32, py * 32, 32, 32);
         requestAnimationFrame(tick);
