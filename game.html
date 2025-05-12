@@ -45,19 +45,28 @@
       }
       
       function moveUp() {
-        py--;
+        if (py > 0) {
+          py--;
+        }       
         pd = 0;
       }
       function moveLeft() {
-        px--;
+        if (px > 0) {
+          px--;
+        }
+
         pd = 3;
       }
       function moveDown() {
-        py++;
+        if (py < 3) {
+          py++;
+        }
         pd = 2;
       }
       function moveRight() {
-        px++;
+        if (px < 7) {
+          px++;
+        }
         pd = 1;
       }
 
